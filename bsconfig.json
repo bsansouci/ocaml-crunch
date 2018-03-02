@@ -1,0 +1,9 @@
+{
+  "name": "ocaml-crunch",
+  "sources": "src",
+  "bs-dependencies": ["cmdliner"],
+  "entries": [{
+    "backend": "bytecode",
+    "main-module": "Main"
+  }]
+}
