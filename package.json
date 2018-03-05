@@ -1,9 +1,9 @@
 {
   "name": "ocaml-crunch",
+  "bin": { "crunch": "./crunch" },
+  "scripts": { "postinstall": "bsb -make-world" },
   "dependencies": {
-    "cmdliner": "bsansouci/cmdliner"
-  },
-  "devDependencies": {
+    "cmdliner": "bsansouci/cmdliner",
     "bs-platform": "bsansouci/bsb-native#2.1.1"
   }
 }

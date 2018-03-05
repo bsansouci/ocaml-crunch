@@ -1,9 +1,11 @@
 {
   "name": "ocaml-crunch",
-  "sources": "src",
+  "sources": [ "src" ],
   "bs-dependencies": ["cmdliner"],
+  "warnings": {"type": "warn", "number": "-44-33"},
   "entries": [{
     "backend": "bytecode",
     "main-module": "Main"
-  }]
+  }],
+  "build-script": "rm -f crunch && ln -s ./lib/bs/bytecode/main.byte crunch"
 }
